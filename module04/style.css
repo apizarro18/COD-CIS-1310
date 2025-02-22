@@ -1,0 +1,29 @@
+
+    header a {
+        color: #99ccff;
+    }
+
+    strong  {
+        font-weight: bold; font-size: 2em;
+
+    }
+
+    section a {
+        
+        color: #0000ff; font-weight: bold 
+    } 
+
+    header {
+        background-color: #008833; padding: 1rem; 
+    }
+
+    main {
+
+        background-color: lightgrey; padding: 1rem; min-width: 50vh;
+    }
+
+    footer {
+
+        background-color: #008833; padding: 1rem; color: #99ccff;
+    }
+
