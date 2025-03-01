@@ -1,0 +1,161 @@
+/*
+Description:  theme for Classes
+Author:       J Neathawk
+Author URI:   https://knighthawk0811.github.io
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
+
+
+/*--------------------------------------------------------------
+selector {
+	layout(position)
+	
+	content(text)
+	
+	design(background)
+	
+	other(z-index)
+}
+----------------------------------------------------------------
+>>> COLORS:	  
+----------------------------------------------------------------
+:root {
+  --color-variable: #ffffff;
+}
+
+
+----------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Universal
+# General Elements
+# Modal Navigation
+# Navigation
+# Header Area
+# Content Area
+# Footer Area
+# Reusable Classes
+# Other
+# Templates
+# Media Queries
+
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# Universal
+--------------------------------------------------------------*/
+html * {
+    box-sizing: border-box;
+}
+/*--------------------------------------------------------------
+# General Elements
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+nav a:link{
+
+	color:slategray;
+	
+}
+
+nav a:visited{
+
+	color:darkcyan;
+	
+}
+
+nav a:hover{
+
+	color:lightslategray;
+
+}
+
+nav a:active{
+
+	color:green;
+}
+
+nav li{
+
+	list-style-type:lower-alpha;
+	color: lightslategray;
+}
+
+
+/*--------------------------------------------------------------
+# Header Area
+--------------------------------------------------------------*/
+
+header{
+
+	padding:1rem;
+	color:whitesmoke;
+	background-color:lightslategrey;
+}
+
+/*--------------------------------------------------------------
+# Content Area
+--------------------------------------------------------------*/
+body{
+
+	margin:0;
+}
+
+
+main{
+
+	width: 70% - 1px;
+	padding: 1rem;
+	border-right: 1px;
+	border-color: black;
+	
+}
+
+aside section{
+
+	width:30%;
+	align-items: right;
+
+}
+
+section img{
+	width: 30%;
+	align-items: right;
+}
+
+/*--------------------------------------------------------------
+# Footer Area
+--------------------------------------------------------------*/
+
+footer{
+	
+	padding:1rem;
+	color:whitesmoke;
+	background-color:lightslategray;
+	text-align:center;
+}
+
+/*--------------------------------------------------------------
+# Reusable Classes
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Other
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Templates
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
