@@ -1,0 +1,80 @@
+<head>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- create the form, giving users a text box for full name, email, password. Date for DOB, radio for favorite hobby, check box for terms and conditions,
+  dropdown for prog langs, textarea for feedback, and then a submit button. I'll also be making labels for them.-->
+
+<form action="#" method="POST">
+    <fieldset>
+
+        <legend>Enter user information. (required fields are marked in red)</legend>
+
+            <label for="user_full_name">Enter your full name:</label>
+            <input type="text" id="user_full_name" name="full_name" required><br>
+
+            <label for="user_email">Enter your email:</label>
+            <input type="email" id="user_email" name="email" required><br>
+
+            <label for="user_password">Enter your password:</label>
+            <input type="password" id="user_password" name="password" required><br>
+
+            <label for="user_dob">Enter your Date of Birth:</label>
+            <input type="date" id="user_dob" name="dob"><br>
+
+    </fieldset>
+
+    <fieldset> 
+
+        <legend>Choose your favorite hobby from the list!</legend>
+
+            <label for="sports">Playing sports!</label>
+            <input type="radio" id="sports" name="hobby">
+            <label for="vgames">Playing video games!</label>
+            <input type="radio" id="vgames" name="hobby">
+            <label for="tv">Streaming my favorite shows!</label>
+            <input type="radio" id="tv" name="hobby">
+            <label for="nature">Enjoying nature!</label>
+            <input type="radio" id="nature" name="hobby">
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Terms and Conditions</legend>
+        <label for="user_tc">Click here to agree to the terms and conditions:</label>
+        <input type="checkbox" id="user_tc" name="agree">
+
+    </fieldset>
+   
+    <fieldset>
+
+        <legend>Favorite Programming Languages</legend>
+            <label for="user_languages">Choose your favorite programming languages:</label>
+            <select name="language" id="user_languages" multiple>
+                <option value="python">Python</option>
+                <option value="c++">C++</option>
+                <option value="java">Java</option>
+                <option value="javascript">JavaScript</option>
+                <option value="Rust">Rust</option>
+            </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Have any feedback?</legend>
+
+            <label for="user_comments">Enter any comments:</label>
+            <textarea id="user_comments" name="comments" rows="1" cols="50">
+
+            </textarea>
+
+    </fieldset> 
+        <button type="submit" id="submitbtn">Submit</button>
+    
+
+</form>
+
+</body>

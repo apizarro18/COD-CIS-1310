@@ -1,0 +1,136 @@
+body {
+
+    background-color: azure;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:5px;
+}
+
+fieldset{
+
+    padding:10px;
+    margin-top: 15px;
+    margin-bottom:15px;
+}
+
+input{
+
+    padding:10px;
+    background-color: azure;
+    padding-inline: 5px;
+    padding-block: 5px;
+    border-color:grey;
+    border-radius:10px;
+    border-style:solid;
+    border-width:4px;
+    
+}
+
+select{
+
+    padding:20px;
+    background-color: azure;
+    padding-inline: 5px;
+    padding-block: 8px;
+    border-color:lightblue;
+    border-radius:15px;
+    border-style:solid;
+    border-width:4px;
+    display:block;
+}
+
+label[for="user_full_name"],label[for="user_email"],label[for="user_password"] {
+
+    color:red;
+    font-weight: 5px;
+  
+
+}
+
+textarea {
+
+    background-color:azure;
+    padding:20px;
+    border-radius:15px;
+    border-style:solid;
+    border-width:4px;
+    border-color:grey;
+}
+
+
+#user_full_name:hover{
+    border-color:lightblue;
+    border-radius:15px;
+
+}
+
+#user_full_name:invalid{
+    border-color:red;
+    border-radius:15px;
+}
+
+#user_full_name:valid{
+
+    border-color:lightgreen;
+    border-radius:15px;
+}
+
+#user_email:hover{
+    border-color:lightblue;
+
+    border-radius:15px;
+    
+}
+
+#user_email:invalid{
+    border-color:red;
+    border-radius:15px;
+}
+
+#user_email:valid{
+
+    border-color:lightgreen;
+    border-radius:15px;
+}
+
+#user_password:hover{
+    border-color:lightblue;
+    border-radius:15px;
+}
+
+#user_password:invalid{
+
+    border-color:red;
+    border-radius:15px;
+}
+
+#user_password:valid{
+
+    border-color:lightgreen;
+    border-radius:15px;
+}
+
+input [id="sports"]{
+    padding-top:15px;
+}
+
+
+button {
+
+    background-color:lightblue;
+    color:back;
+    border-radius:15px;
+    border-color:lightblue;
+    border-width:10px;
+
+    
+
+}
+
+button:hover{
+
+    color:white;
+    background-color: lightgreen;
+    border-color:lightgreen;
+    border-width:10px;
+
+}
