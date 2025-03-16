@@ -11,29 +11,31 @@
         <picture>
             <!-- this is the original goat-herd image in the "large" format-->
             <source
-                srcset= "goatherd-large.png"
+                srcset= "images/goatherd-large.png"
+                media="(min-width: 1000px)"
                 type= "image/png"
                 />
             <!-- this is uses the inverted color-scheme for the goat-herd image, while still being in the "large" format-->
             <source 
-                srcset= "goatherd-large.webp"
+                srcset= "images/goatherd-large.webp"
+                media="(min-width: 1000px)"
                 type= "image/webp"
                 />
             <!-- this is uses the original color scheme of the goat-herd image but features a text caption in the top left with the word "goat" in white text -->
             <source
-                srcset= "goatherd-small.png"
+                srcset= "images/goatherd-small.png"
                 media= "(max-width: 600px)"
                 type= "image/png"
                 />
 
             <!-- this uses the invert color scheme of the goat-herd image but still features the white text caption of the word "goat". -->
             <source
-                srcset= "goatherd-small.webp"
+                srcset= "images/goatherd-small.webp"
                 media-= "(max-width: 600px)"
                 type= "image/webp"
                 />
                 <!-- if the sources get rejected by the browser, it will default to the original goat-herd image in the largest size available.-->
-                <img src= "goatherd-large.png" alt="A goat herd gazing at a camera lying in the grass." />
+                <img src= "images/goatherd-large.webp" alt="A goat herd gazing at a camera lying in the grass." />
             
         </picture>
         <figcaption> A goat herd gazing at a camera lying in the grass. </figcaption>
