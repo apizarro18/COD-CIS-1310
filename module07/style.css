@@ -1,6 +1,16 @@
-picture img{
+body figure picture img{
+
     display:flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+}
+
+figure figcaption {
+
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    justify-self: center;
+
 }
