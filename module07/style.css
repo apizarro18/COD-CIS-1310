@@ -1,13 +1,20 @@
+picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
 picture img{
 
-    display:grid;
-    align-self: center;
-    justify-self: center;
+    display:flex;
+    align-content: center;
+    justify-content: center;
 }
 
 figcaption {
 
-    display:grid;
-    align-self: center;
-    justify-self: center;
+    display:flex;
+    align-items: stretch;
+    justify-content: center;
 }
