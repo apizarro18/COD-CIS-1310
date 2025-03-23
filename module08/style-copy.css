@@ -48,6 +48,16 @@ selector {
 
 --------------------------------------------------------------*/
 
+/* What I added: I played some more flexbox froggy (a fantastic resource to easily visualize flexboxes and their properties!) 
+and I really wanted to use flexboxes for the header to show off what I learnt.
+
+I used display:flex and justify-content:center to put the items centered in the nav bar, and nav ul li has a display of inline-flex to keep all the horizontally even.
+
+I played around with the header, but after looking at the different options for the position property, I found relative to the correct choice.
+
+Changing the buttons was easy, I had to simply add background-color: blue to the :hover button.
+
+I did have to adjust the main and body properties a bit, messing with the margins to make sure that the header covered the whole width of the top.
 
 
 /*--------------------------------------------------------------
