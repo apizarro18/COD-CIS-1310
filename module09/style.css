@@ -1,0 +1,208 @@
+ /*
+Description:  Default theme for Classes
+Author:       Joseph Neathawk
+Author URI:   https://knighthawk0811.github.io
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
+/*--------------------------------------------------------------
+selector {
+	layout(position)
+	
+	content(text)
+	
+	design(background)
+	
+	other(z-index)
+}
+----------------------------------------------------------------
+>>> COLORS:	  
+----------------------------------------------------------------
+	blue-dark:#003366;
+	green:#00cc66;	
+	red: #aa0000;
+	yellow: #DFE69E rgba(255,255,100,0.5);
+
+----------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Main Structure
+# General Elements
+# Modal Navigation
+# Navigation
+# Header Area
+# Content Area
+# Footer Area
+# Reusable Classes
+# Other
+# Templates
+# Media Queries
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Main Structure
+--------------------------------------------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+html.not-top {
+    display: none;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/*the entire body of the html page*/
+body {
+    background: #669966;
+}
+/* a wrapper around all the actual page content
+    this will be centered on the page*/
+#page {
+    margin: 3px auto;
+    position: relative;
+    width: calc(100% - 10px);
+    max-width: 1000px;
+
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+/*--------------------------------------------------------------
+# General Elements
+--------------------------------------------------------------*/
+iframe {
+    width: 100%;
+
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/*--------------------------------------------------------------
+# Modal Navigation
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+nav {
+    padding: 0 1em;
+    margin: 0;
+    
+}
+nav ul li {
+    list-style: none inside none;
+}
+nav ul {
+    list-style: none inside none;
+    padding: 0;
+    margin: 0;
+}
+/*--------------------------------------------------------------
+# Header Area
+--------------------------------------------------------------*/
+/*main header div*/
+header {
+    display:flex;
+    margin: 0;
+    min-height: 5em;
+    position: relative;
+    width: 100%;
+    padding: 1em;
+
+    color: #eeeeff;
+    text-align: center;
+    background-color: #343a40;
+    align-items:center;
+    justify-content: center;
+    font-size:larger;
+
+}
+
+/*--------------------------------------------------------------
+# Content Area
+--------------------------------------------------------------*/
+main {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1em;
+    position: relative;
+    padding: 0;
+    width: calc(100% - 2em);
+    min-height: 50vh;
+}
+
+main img {
+
+    width: 50%;
+    margin: 1% 1%;
+
+
+}
+
+/*--------------------------------------------------------------
+# Footer Area
+--------------------------------------------------------------*/
+/*the footer of the page*/
+footer {
+    height: 3em;
+    margin: 0;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+
+    color: #eeeeff;
+    text-align: center;
+
+    background: #343a40;
+}
+/*--------------------------------------------------------------
+# Reusable Classes
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Other
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Templates
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+
+/* for-phone-only */
+@media only screen and (max-width: 599px) {
+}
+
+/* for-tablet-portrait-up */
+@media only screen and (min-width: 600px) {
+}
+
+/* for-tablet-portrait-only */
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+}
+
+/* for-tablet-landscape-up */
+@media only screen and (min-width: 900px) {
+}
+
+/* for-tablet-landscape-only */
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+}
+
+/* for-desktop-up */
+@media only screen and (min-width: 1200px) {
+}
+
+/* for-desktop-only */
+@media only screen and (min-width: 1200px) and (max-width: 1799px) {
+}
+
+/* for-big-desktop-up */
+@media only screen and (min-width: 1800px) {
+}
