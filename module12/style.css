@@ -1,0 +1,45 @@
+table, th, td, tr {
+    
+    border: 2px solid;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+
+
+   
+    border-spacing: 10px;
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    
+    
+
+}
+
+footer{
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+img{
+
+    width: 35%;
+    height: 35%;
+}
+
+#title {
+    background-color:#50586C;
+}
+
+#product-one, #product-three, #product-five {
+
+    background-color: #DCE2F0;
+}
+
+#product-two, #product-four{
+    background-color: #8D99AE;
+}
