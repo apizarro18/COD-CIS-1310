@@ -67,7 +67,6 @@ span:hover{
 
 #main {
     transition: margin-left .5s;
-
     display:flex;
     justify-content: center;
     align-items: center;
@@ -75,7 +74,39 @@ span:hover{
     width: calc(100% - 2em);
     min-height: 50vh;
  
-    
+}
+/* Styling for the image gallery */ 
+
+
+#images { 
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    max-height: 75vh;
+    width: 100%;
+    max-width: 1200px;
+
+
+}
+
+#images {
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#images img {
+
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+#images { 
+    scroll-behavior: smooth;
 }
 
 
