@@ -69,11 +69,16 @@ span:hover{
     transition: margin-left .5s;
     display:flex;
     justify-content: center;
-    align-items: center;
-    margin: 0 1em;
-    width: calc(100% - 2em);
-    min-height: 50vh;
- 
+    align-items: flex-start;
+    padding: 1em;
+    flex-direction: column;
+
+    gap: 20px;
+    overflow-y: auto;
+    max-height: 80vh;
+    width: 100%;
+    max-width: 1200px;
+
 }
 /* Styling for the image gallery */ 
 
@@ -83,26 +88,24 @@ span:hover{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    overflow-y: scroll;
-    max-height: 75vh;
     width: 100%;
-    max-width: 1200px;
 
 
 }
 
-#images {
+#images picture {
 
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
 #images img {
 
     width: 100%;
-    object-fit: cover;
+    max-width: 1200px;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 #images { 
