@@ -86,8 +86,7 @@ span:hover{
 
 #images { 
 
-    display: flex;
-    flex-direction: column;
+    display: block;
     gap: 20px;
     width: 100%;
     scroll-behavior: smooth;
