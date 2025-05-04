@@ -31,7 +31,7 @@ body {
 .sidenav a {
     display: block;
     transition: 0.5s;
-    color: #15141A;
+    color: #666;
     font-size: 18px;
     padding-left: 15px;
     padding-top: 15px;
@@ -60,6 +60,7 @@ span:hover{
     right: 25px;
     font-size: 20px;
     margin-left: 50px;
+    text-decoration: none;
 }
 
 /* Main Content PUSHED to the right when menu open */
