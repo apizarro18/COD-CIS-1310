@@ -78,6 +78,7 @@ span:hover{
     max-height: 80vh;
     width: 100%;
     max-width: 1200px;
+    scroll-behavior: smooth;
 
 }
 /* Styling for the image gallery */ 
@@ -87,8 +88,9 @@ span:hover{
 
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     width: 100%;
+    scroll-behavior: smooth;
 
 
 }
@@ -108,9 +110,7 @@ span:hover{
     margin: 0 auto;
 }
 
-#images { 
-    scroll-behavior: smooth;
-}
+
 
 
 
