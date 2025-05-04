@@ -77,7 +77,7 @@ span:hover{
     overflow-y: auto;
     max-height: 80vh;
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
     scroll-behavior: smooth;
     margin: 0 auto;
     
