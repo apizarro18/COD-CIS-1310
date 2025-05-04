@@ -69,7 +69,7 @@ span:hover{
     transition: margin-left .5s;
     display:flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding: 1em;
     flex-direction: column;
 
