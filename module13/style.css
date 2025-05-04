@@ -79,6 +79,8 @@ span:hover{
     width: 100%;
     max-width: 1200px;
     scroll-behavior: smooth;
+    margin: 0 auto;
+    
 
 }
 /* Styling for the image gallery */ 
@@ -98,6 +100,7 @@ span:hover{
 
     width: 100%;
     margin: 0 auto;
+    max-height: 80vh;
 }
 
 #images img {
@@ -107,6 +110,8 @@ span:hover{
     height: auto;
     display: block;
     margin: 0 auto;
+    max-height: 80vh;
+    
 }
 
 
