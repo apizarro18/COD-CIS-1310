@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Portfolio By Alex</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
+
+
+</head>
+
+<body>
+
+    <div id="sideNavBar" class="sidenav">
+            <div class="contactinfo">
+                Alex Pizarro <br>
+                Wood Dale <br>
+                <a href="https://github.com/apizarro18" target="_blank">
+                    <img src="images/github.png" alt="Github Logo." class="icon">
+                    Github </a> 
+                <a href="https://www.youtube.com/@CurrencyyTV?sub_confirmation=1">
+                    <img src="images/youtubeSquare.png" alt="Youtube Logo." class="icon">
+                    Youtube </a>
+            </div>
+        </div>
+
+    <div id="sideBarOverlay" onclick="toggleNav()"></div>
+
+    <button id="openBtn" onclick="scrollToggle()">contact.</button>
+
+    <div id="mainContent">
+
+        <div class="workHistory">
+            
+            <h1>Work History</h1>
+            <img src="images/nordstromLogo.png" alt="Nordstrom spelt out in all caps." id="logo"> <br>
+
+            <em>Nordstrom Stylist</em> (Nov 2022 - Nov 2023) <br>
+            Top 5 in sales in the Men's Clothing department @ Nordstrom Oakbrook. <br><br>
+            <em>Nordstrom Camera Talent</em> (May 2022 - Nov 2023) <br>
+            Worked as on-camera talent, starring in short-form videos on the latest products to hit the website.
+
+            <div class="videoContainer" id="focusTrigger">
+                <div class="video-overlay" id="videoOverlay"></div> 
+                <iframe class="responsive-iframe" id="nVideo" src="https://youtube.com/embed/JaZKZ2UhDVc?rel=0&modestbranding=1^a&autoplay=0" 
+                frameborder="0" allowfullscreen>
+                </iframe>
+                <h3 id="videoCaption">See me live!</h3>
+            </div>
+
+            
+        </div>
+
+        <div class="interests">
+
+            <h1>Hobbies & Achievements.</h1>
+            I competed in Speech & Debate in High School, representing Illinois at Nationals where I placed top 60 in the nation. <br>
+            I also didn't allow COVID-19 to stop me from having a great 2020-2021 season. <br>
+            <img src="images/speechResults.png" alt="results sheet from the 2020-2021 IHSA Speech Season, showing one first place, four second place, and three third place finishes." id="speechResults">
+            <br>
+            
+            <br> I also run my own Youtube channel, where I have achieved Youtube Partner, allowing me to monetize my content as I explore my passion of video editing. <br>
+            <a href="https://www.youtube.com/@CurrencyyTV?sub_confirmation=1" target="_blank">
+                <img src="images/CurrencyyLogo.png" alt="CurrencyyTV Youtube Channel Logo" id="youtubeLogo">
+            </a>
+
+
+        </div>
+
+        <footer> 
+            <a id="footer">© alex pizarro.</a>
+        </footer>
+
+
+    </div>
+
+    <script src="myscripts.js"></script>
+    
+  
+
+</body>
+
+</html>

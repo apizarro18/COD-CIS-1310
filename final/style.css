@@ -1,0 +1,405 @@
+/* Main Content Customization */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Font Properties */
+
+    font-family: "Proxima Nova", Georgia, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0em;
+    font-size: 18px;
+
+    /* Background Properties */
+
+    background-color: white;
+    color: #666;
+    text-decoration: none;
+    background-image: url("images/geoLeaves.webp");
+    background-repeat: repeat;
+    
+  
+
+}
+
+/* Main Content Wrapper */
+
+#mainContent {
+    transition: margin-left 0.5s ease;
+    padding: 2em;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* header properties */
+
+body h1, h2 {
+
+    color: black;
+}
+
+
+/* main text properties */
+
+#mainContent {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em 1em;
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    transition: margin-left 0.5s ease, filter 0.3s ease;
+}
+
+/* blur for the main content when nav bar is open */
+
+body.menu-open #mainContent {
+    filter: blur(4px);
+}
+
+/* speech results image properties */
+
+#speechResults {
+    display: block;
+    margin: 1em auto;
+    max-width: 90%;
+    height: auto;
+   
+}
+
+#speechResults img {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* nordstrom logo properties */
+
+#logo {
+    display: block;
+    margin: 1em auto;
+    max-width: 150px;
+}
+
+/* youtube logo properties */
+
+#youtubeLogo {
+
+    width: 60%;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#youtubeLogo:hover {
+    transform: scale(1.05)
+}
+
+/* Video Properties */
+
+#videoCaption {
+    text-align: center;
+}
+
+.videoContainer {
+
+    position: relative;
+    width: 60vw;
+    max-width: 960px;
+    height: 25vw;
+    aspect-ratio: 9 / 16;
+    margin: 2em auto;
+    z-index: 1;
+    will-change: transform;
+    box-shadow: rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease, opacity 0.4s ease;
+}
+
+.videoContainer iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Stops users from clicking the video itself, instead they click a transparent overlay which causes video focus to occur */
+
+.video-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.videoContainer:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* video will fade in, background will blur. */
+
+body.focus-active::before {
+
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(6px);
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 9998;
+    opacity: 0;
+    animation: fadeInOverlay 0.4s ease-in-out forwards;
+}
+
+@keyframes fadeInOverlay {
+    to {
+        opacity: 1;
+    }
+}
+
+body.focus-active .videoContainer {
+
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    width: 80vw;
+    height: auto;
+    max-height: 70vh;
+    transform: translate(-50%);
+    z-index: 9999;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    animation: fadeInZoom 0.4s ease-out forwards;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    opacity: 1;
+
+}
+
+@keyframes fadeInZoom {
+    0% {
+        transform: translate(-50%, -10%) scale(0.9);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(-50%, -45%) scale(1);
+        opacity: 1;
+    }
+}
+
+body.focus-active iframe {
+
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* blur whem sidebar is open */
+
+body.menu-open {
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    transition: backdrop-filter 0.3s ease;
+    overflow: hidden;
+}
+
+
+/* Contact Button Properties */
+
+#openBtn {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    z-index: 10001;
+    padding: 10px 15px;
+    font-size: 20px;
+    background: none;
+    border:none;
+    color: #666;
+    cursor: pointer;
+    font-family: inherit;
+    transition: color 0.3s ease;
+    
+}
+
+#openBtn:hover {
+    color: black;
+   
+}
+
+/* Nav Bar Overlay (Allows mobile users/web users to exit by clicking out of the menu) */
+
+#sideBarOverlay {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+body.menu-open #sideBarOverlay {
+
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* Side Bar Navigation Menu */
+
+.sidenav {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: transform 0.5s ease;
+    z-index: 10000;
+    transform: translateX(-100%);
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.sidenav.open {
+
+    transform: translateX(0);
+}
+
+
+/* links properties */
+
+.sidenav a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding-top: 15px;
+}
+
+.sidenav a:hover {
+    color: black;
+}
+
+/* Contact Info Properties */
+
+.contactinfo {
+    
+    color: #666;
+    text-align: left;
+    line-height: 1.6;
+    padding-left: 20px;
+
+}
+
+.contactinfo .icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* footer properties */ 
+
+footer {
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Mobile View (Iphone 14 Pro Max) */
+
+@media screen and (max-width: 430px) {
+    #mainContent {
+        padding: 1em;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+    #youtubeLogo {
+        width: 75%;
+        margin-top: 10px;
+    }
+
+    #youtubeLogo:hover {
+    transform: scale(1.1)
+    }
+
+    .contactinfo {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #openBtn {
+        font-size: 16px;
+        padding: 8px 10px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .videoContainer {
+
+        width: 100%;
+        height: 40vh;
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+    
+}
+
+
+/* Tablet View */
+
+@media screen and (max-width: 768px) {
+    #mainContent {
+        padding: 1em;
+    }
+    
+    .videoContainer {
+        width: 90vw;
+        height: 45vh;
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+
+    #openBtn {
+        font-size: 18px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .contactinfo {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
